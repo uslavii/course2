@@ -1,4 +1,4 @@
-package com.classwork2;
+package com.company.classwork.lesson2;
 
 public class PersonStaticTest {
     public static void main(String[] args) {

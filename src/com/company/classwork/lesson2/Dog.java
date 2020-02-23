@@ -1,4 +1,4 @@
-package com.classwork2;
+package com.company.classwork.lesson2;
 
 public class Dog {
     private String color;
