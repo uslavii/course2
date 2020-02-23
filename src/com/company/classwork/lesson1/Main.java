@@ -3,12 +3,12 @@ package com.company.classwork.lesson1;
 public class Main {
 
     public static void main(String[] args) {
-        recursionFucn();
+        recursionFunc();
 
     }
 
-    public static void recursionFucn() {
+    public static void recursionFunc() {
         System.out.println("привет, Java!");
-        recursionFucn();
+        recursionFunc();
     }
 }
