@@ -3,7 +3,7 @@ package com.company.homework.сonstructors;
 public class Cat {
 
     public String name = "unknown";
-    public float weight = 1;
+    public float weight = 2.6f;
     public int age = 1;
     public String color = "White";
     public String address = "homeless";
