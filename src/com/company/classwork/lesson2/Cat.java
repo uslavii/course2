@@ -6,7 +6,7 @@ public class Cat {
     int age;
 
     public void run() {
-        System.out.println("Cat run");
+        System.out.println("CatBox run");
     }
 
 }
