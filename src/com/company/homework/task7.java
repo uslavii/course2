@@ -8,8 +8,8 @@ public class task7 {
 
     static class Util {
         public static double getDistance(double x1, double y1, double x2, double y2) {
-            double a = ((x2 - x1) * (x2 - x1)) + ((y2 - y1) * (y2 - y1));
-            return Math.sqrt(a);
+            double result = ((x2 - x1) * (x2 - x1)) + ((y2 - y1) * (y2 - y1));
+            return Math.sqrt(result);
         }
     }
 
