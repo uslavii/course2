@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class task7 {
+public class Task7 {
 
     static class Util {
         public static double getDistance(double x1, double y1, double x2, double y2) {
