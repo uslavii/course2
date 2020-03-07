@@ -3,12 +3,14 @@ package com.company.homework.personWithAccount;
 public class Person {
 
     public static String name;
+    public Account account;
 
-    public Person(String name) {
+    public Person(Account account, String name) {
         this.name = name;
+        this.account = account;
     }
 
-    class Account {
+    static class Account {
         public String password;
 
         public Account(String password) {
@@ -21,6 +23,4 @@ public class Person {
         }
 
     }
-
-
 }
