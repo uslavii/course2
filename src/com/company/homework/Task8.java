@@ -17,6 +17,7 @@ public class Task8 {
         public int readInt() throws IOException {
             Pattern pattern = Pattern.compile("[0-9]");
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+            System.out.println("введите число");
             String console = reader.readLine();
             if (console.matches(String.valueOf(pattern))) {
                 System.out.println("вы ввели неправильные символы");
@@ -55,7 +56,5 @@ public class Task8 {
         System.out.println(consoleReader.readInt());
         System.out.println(consoleReader.readDouble());
         consoleReader.readLn();
-
-
     }
 }
