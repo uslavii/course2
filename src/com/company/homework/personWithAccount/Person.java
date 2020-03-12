@@ -5,12 +5,12 @@ public class Person {
     public static String name;
     public Account account;
 
-    public Person(Account account, String name) {
+    public Person(String name, String password) {
         this.name = name;
-        this.account = account;
+        account = new Account(password);
     }
 
-    static class Account {
+    class Account {
         public String password;
 
         public Account(String password) {
