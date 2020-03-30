@@ -1,5 +1,5 @@
 package com.company.homework.zoo;
 
-public interface Run {
+public interface Run extends Element {
     void run();
 }
