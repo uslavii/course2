@@ -10,13 +10,13 @@ public class ResidentialProperty extends AbstractProperty {
     }
 
     @Override
-    public void taxCalculation() {
+    public double taxCalculation() {
         double result;
         if (subsidies != 0 && subsidies > 0) {
             result = taxResult - (subsidies * (taxResult / 100));
         } else {
             result = taxResult;
         }
-        System.out.println("tax to be paid is:" + result);
+        return result;
     }
 }

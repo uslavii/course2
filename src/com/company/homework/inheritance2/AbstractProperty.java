@@ -12,5 +12,5 @@ public abstract class AbstractProperty {
         taxResult = this.s * this.taxK;
     }
 
-    public abstract void taxCalculation();
+    public abstract double taxCalculation();
 }

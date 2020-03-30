@@ -6,7 +6,7 @@ public class ProductionProperty extends AbstractProperty {
     }
 
     @Override
-    public void taxCalculation() {
-        System.out.println("tax to be paid is:" + taxResult);
+    public double taxCalculation() {
+        return taxResult;
     }
 }

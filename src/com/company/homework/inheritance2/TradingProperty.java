@@ -10,10 +10,10 @@ public class TradingProperty extends AbstractProperty {
     }
 
     @Override
-    public void taxCalculation() {
+    public double taxCalculation() {
         if (revenue < 100) {
             taxResult = 0;
         }
-        System.out.println("tax to be paid is:" + taxResult);
+        return taxResult;
     }
 }
