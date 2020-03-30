@@ -13,34 +13,33 @@ public class Main {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("pls choose manager,designer,developer or tester");
         String line = " ";
-        while (!line.matches("/n")) {
+        while (!line.matches("")) {
             line = reader.readLine();
-            employeeInitialization(line);
-            continue;
+            employeeInitialization(line).information();
         }
     }
 
-    private static void employeeInitialization(String input) {
+    private static AbstractEmployee employeeInitialization(String input) {
         switch (input) {
             case "manager":
-                Manager manager = new Manager();
-                manager.information();
-                break;
+                return new Manager();
             case "developer":
-                Developer developer = new Developer();
-                developer.information();
-                break;
+                return new Developer();
             case "designer":
-                Designer designer = new Designer();
-                designer.information();
-                break;
+                return new Designer();
             case "tester":
-                Tester tester = new Tester();
-                tester.information();
+                return new Tester();
+            case "":
+                System.out.println("thanks for using!");
                 break;
             default:
                 System.out.println("pls choose manager,designer,developer or tester");
-                break;
         }
+        return new AbstractEmployee() {
+            @Override
+            public void information() {
+
+            }
+        };
     }
 }
