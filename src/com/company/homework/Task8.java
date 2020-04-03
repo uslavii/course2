@@ -7,18 +7,18 @@ import java.util.regex.Pattern;
 
 public class Task8 {
     static class ConsoleReader {
-        private BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        private String console ;
+        private static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        private static String console ;
 
         ConsoleReader() throws IOException {
         }
 
-        public String readString() throws IOException {
+        public static String readString() throws IOException {
             console = reader.readLine();
             return console;
         }
 
-        public int readInt() throws IOException {
+        public static int readInt() throws IOException {
             console = reader.readLine();
             Pattern pattern = Pattern.compile("[0-9]");
             if (console.matches(String.valueOf(pattern))) {
@@ -29,7 +29,7 @@ public class Task8 {
             return result;
         }
 
-        public double readDouble() throws IOException {
+        public static double readDouble() throws IOException {
             console = reader.readLine();
             if (console.matches("[.]")) {
                 System.out.println("вы ввели не дробное число. используйте другой метод");
@@ -39,7 +39,7 @@ public class Task8 {
             return result;
         }
 
-        public void readLn() throws IOException {
+        public static void readLn() throws IOException {
             console = reader.readLine();
             if (console.matches("/n")) {
                 System.out.println("неверно!");
