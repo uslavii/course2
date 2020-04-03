@@ -25,8 +25,7 @@ public class Task8 {
                 System.out.println("вы ввели неправильные символы");
                 return 0;
             }
-            int result = Integer.parseInt(console);
-            return result;
+            return Integer.parseInt(console);
         }
 
         public static double readDouble() throws IOException {
@@ -35,8 +34,7 @@ public class Task8 {
                 System.out.println("вы ввели не дробное число. используйте другой метод");
                 return 0;
             }
-            double result = Double.parseDouble(console);
-            return result;
+            return Double.parseDouble(console);
         }
 
         public static void readLn() throws IOException {
