@@ -15,7 +15,10 @@ public class Main {
         String line = " ";
         while (!line.matches("")) {
             line = reader.readLine();
-            employeeInitialization(line).information();
+            AbstractEmployee employee = employeeInitialization(line);
+            if (employee != null) {
+                employee.information();
+            }
         }
     }
 
@@ -35,11 +38,6 @@ public class Main {
             default:
                 System.out.println("pls choose manager,designer,developer or tester");
         }
-        return new AbstractEmployee() {
-            @Override
-            public void information() {
-
-            }
-        };
+        return null;
     }
 }
