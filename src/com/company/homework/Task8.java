@@ -51,12 +51,12 @@ public class Task8 {
     public static void main(String[] args) throws IOException {
         ConsoleReader consoleReader = new ConsoleReader();
         System.out.println("введите любой текст");
-        System.out.println(consoleReader.readString());
+        System.out.println(ConsoleReader.readString());
         System.out.println("введите число");
-        System.out.println(consoleReader.readInt());
+        System.out.println(ConsoleReader.readInt());
         System.out.println("введите дробное число");
-        System.out.println(consoleReader.readDouble());
+        System.out.println(ConsoleReader.readDouble());
         System.out.println("нажмите enter");
-        consoleReader.readLn();
+        ConsoleReader.readLn();
     }
 }
