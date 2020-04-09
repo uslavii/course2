@@ -1,4 +1,4 @@
-package com.company.homework;
+package com.company.homework.tasks;
 
 public class Task9 {
     public static class Cat {

@@ -1,4 +1,4 @@
-package com.company.homework;
+package com.company.homework.tasks;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package com.company.homework;
+package com.company.homework.tasks;
 
 public class CommandLineArguments {
     public static void main(String[] args) {
