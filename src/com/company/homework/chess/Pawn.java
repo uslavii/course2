@@ -1,7 +1,5 @@
 package com.company.homework.chess;
 
-import java.util.Arrays;
-
 public class Pawn extends ChessItem {
 
     public Pawn() {
@@ -10,10 +8,4 @@ public class Pawn extends ChessItem {
     }
 
 
-    @Override
-    public String getInformation() {
-        return "name: " + name +
-                "value: " + value ;
-
-    }
 }

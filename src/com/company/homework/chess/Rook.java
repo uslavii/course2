@@ -6,4 +6,9 @@ public class Rook extends ChessItem {
         name = "Rook";
         value = "5";
     }
+
+    @Override
+    public String getInformation(ChessBoard chessBoard) {
+        return super.getInformation(chessBoard);
+    }
 }
